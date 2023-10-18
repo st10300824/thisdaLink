@@ -5,10 +5,20 @@ import {
 	Text,
 	StyleSheet,
 } from 'react-native';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import {createStackNavigator} from 'react-native-stack';
+import {createAppContainer} from 'react-navigation';
+import Data from '../icetasker/AsecScrn';
+import Navigator from './AsecScrn';
+
+
 
 function App(){
 	const [count, setCount] = useState(0);
 	const [dispText, setDispText] = useState('');
+
+	
 
 	useEffect(() => {
 				// whatev code we want to execute, just because…
